@@ -1,3 +1,4 @@
 const mongoose = require("mongoose");
-
-mongoose.connect(process.env.MONGODB_URL);
+const dbc =
+  "mongodb+srv://taskapp:<password>@cluster0.sgnux.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+mongoose.connect(dbc);
